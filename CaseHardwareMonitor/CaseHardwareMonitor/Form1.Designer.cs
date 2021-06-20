@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.CPU_NAME = new System.Windows.Forms.Label();
             this.cpu_usage_progress = new CircularProgressBar.CircularProgressBar();
@@ -85,12 +84,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 500;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // timer2
             // 
             this.timer2.Enabled = true;
@@ -105,6 +98,7 @@
             this.CPU_NAME.Size = new System.Drawing.Size(412, 67);
             this.CPU_NAME.TabIndex = 7;
             this.CPU_NAME.Text = "CPU TITLE";
+            this.CPU_NAME.Click += new System.EventHandler(this.CPU_NAME_Click);
             // 
             // cpu_usage_progress
             // 
@@ -651,7 +645,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Label CPU_NAME;
         private System.Windows.Forms.PictureBox pictureBox1;
