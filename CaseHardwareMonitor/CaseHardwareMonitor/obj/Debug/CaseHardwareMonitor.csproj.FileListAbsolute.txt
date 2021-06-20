@@ -1,0 +1,16 @@
+C:\Users\stefa\Desktop\CaseHardwareMonitor\ProgressLingkar\obj\Debug\CaseHardwareMonitor.csproj.AssemblyReference.cache
+C:\Users\stefa\Desktop\CaseHardwareMonitor\ProgressLingkar\obj\Debug\CaseHardwareMonitor.Properties.Resources.resources
+C:\Users\stefa\Desktop\CaseHardwareMonitor\ProgressLingkar\obj\Debug\CaseHardwareMonitor.csproj.GenerateResource.cache
+C:\Users\stefa\Desktop\CaseHardwareMonitor\ProgressLingkar\obj\Debug\CaseHardwareMonitor.csproj.CoreCompileInputs.cache
+C:\Users\stefa\Desktop\CaseHardwareMonitor\ProgressLingkar\bin\Debug\CaseHardwareMonitor.exe.config
+C:\Users\stefa\Desktop\CaseHardwareMonitor\ProgressLingkar\bin\Debug\CaseHardwareMonitor.exe
+C:\Users\stefa\Desktop\CaseHardwareMonitor\ProgressLingkar\bin\Debug\CaseHardwareMonitor.pdb
+C:\Users\stefa\Desktop\CaseHardwareMonitor\ProgressLingkar\bin\Debug\CircularProgressBar.dll
+C:\Users\stefa\Desktop\CaseHardwareMonitor\ProgressLingkar\bin\Debug\OpenHardwareMonitorLib.dll
+C:\Users\stefa\Desktop\CaseHardwareMonitor\ProgressLingkar\bin\Debug\WinFormAnimation.dll
+C:\Users\stefa\Desktop\CaseHardwareMonitor\ProgressLingkar\bin\Debug\CircularProgressBar.xml
+C:\Users\stefa\Desktop\CaseHardwareMonitor\ProgressLingkar\bin\Debug\WinFormAnimation.xml
+C:\Users\stefa\Desktop\CaseHardwareMonitor\ProgressLingkar\obj\Debug\CaseHardwareMonitor.Form1.resources
+C:\Users\stefa\Desktop\CaseHardwareMonitor\ProgressLingkar\obj\Debug\CaseHardwareMonitor.csproj.CopyComplete
+C:\Users\stefa\Desktop\CaseHardwareMonitor\ProgressLingkar\obj\Debug\CaseHardwareMonitor.exe
+C:\Users\stefa\Desktop\CaseHardwareMonitor\ProgressLingkar\obj\Debug\CaseHardwareMonitor.pdb
