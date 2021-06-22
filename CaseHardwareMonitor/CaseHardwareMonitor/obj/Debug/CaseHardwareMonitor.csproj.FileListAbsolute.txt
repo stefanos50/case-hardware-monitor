@@ -21,12 +21,13 @@ C:\Users\stefa\Desktop\CaseHardwareMonitor\CaseHardwareMonitor\bin\Debug\Circula
 C:\Users\stefa\Desktop\CaseHardwareMonitor\CaseHardwareMonitor\bin\Debug\OpenHardwareMonitorLib.dll
 C:\Users\stefa\Desktop\CaseHardwareMonitor\CaseHardwareMonitor\bin\Debug\WinFormAnimation.dll
 C:\Users\stefa\Desktop\CaseHardwareMonitor\CaseHardwareMonitor\bin\Debug\CircularProgressBar.xml
-C:\Users\stefa\Desktop\CaseHardwareMonitor\CaseHardwareMonitor\bin\Debug\WinFormAnimation.xml
-C:\Users\stefa\Desktop\CaseHardwareMonitor\CaseHardwareMonitor\obj\Debug\CaseHardwareMonitor.csproj.AssemblyReference.cache
-C:\Users\stefa\Desktop\CaseHardwareMonitor\CaseHardwareMonitor\obj\Debug\CaseHardwareMonitor.Form1.resources
 C:\Users\stefa\Desktop\CaseHardwareMonitor\CaseHardwareMonitor\obj\Debug\CaseHardwareMonitor.Properties.Resources.resources
 C:\Users\stefa\Desktop\CaseHardwareMonitor\CaseHardwareMonitor\obj\Debug\CaseHardwareMonitor.csproj.GenerateResource.cache
 C:\Users\stefa\Desktop\CaseHardwareMonitor\CaseHardwareMonitor\obj\Debug\CaseHardwareMonitor.csproj.CoreCompileInputs.cache
 C:\Users\stefa\Desktop\CaseHardwareMonitor\CaseHardwareMonitor\obj\Debug\CaseHardwareMonitor.csproj.CopyComplete
 C:\Users\stefa\Desktop\CaseHardwareMonitor\CaseHardwareMonitor\obj\Debug\CaseHardwareMonitor.exe
 C:\Users\stefa\Desktop\CaseHardwareMonitor\CaseHardwareMonitor\obj\Debug\CaseHardwareMonitor.pdb
+C:\Users\stefa\Desktop\CaseHardwareMonitor\CaseHardwareMonitor\obj\Debug\CaseHardwareMonitor.Toggle.resources
+C:\Users\stefa\Desktop\CaseHardwareMonitor\CaseHardwareMonitor\obj\Debug\CaseHardwareMonitor.main_form.resources
+C:\Users\stefa\Desktop\CaseHardwareMonitor\CaseHardwareMonitor\bin\Debug\WinFormAnimation.xml
+C:\Users\stefa\Desktop\CaseHardwareMonitor\CaseHardwareMonitor\obj\Debug\CaseHardwareMonitor.csproj.AssemblyReference.cache

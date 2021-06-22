@@ -1,6 +1,6 @@
 ﻿namespace CaseHardwareMonitor
 {
-    partial class Form1
+    partial class main_form
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main_form));
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.CPU_NAME = new System.Windows.Forms.Label();
             this.cpu_usage_progress = new CircularProgressBar.CircularProgressBar();
@@ -69,6 +69,11 @@
             this.cpu_core_clock_label = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.gpu_fans_label = new System.Windows.Forms.Label();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.night_mode_toggle = new CaseHardwareMonitor.Toggle();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -82,6 +87,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.SuspendLayout();
             // 
             // timer2
@@ -168,7 +175,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(313, 62);
+            this.label1.Location = new System.Drawing.Point(304, 62);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(169, 29);
             this.label1.TabIndex = 11;
@@ -198,7 +205,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(313, 319);
+            this.label3.Location = new System.Drawing.Point(304, 319);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(169, 29);
             this.label3.TabIndex = 18;
@@ -370,6 +377,7 @@
             this.groupBox1.Size = new System.Drawing.Size(276, 116);
             this.groupBox1.TabIndex = 32;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // ram_type_label
             // 
@@ -385,7 +393,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(202, 364);
+            this.label6.Location = new System.Drawing.Point(196, 360);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(103, 23);
             this.label6.TabIndex = 33;
@@ -395,17 +403,18 @@
             // 
             this.core_clock_label.AutoSize = true;
             this.core_clock_label.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.core_clock_label.Location = new System.Drawing.Point(190, 396);
+            this.core_clock_label.Location = new System.Drawing.Point(201, 383);
             this.core_clock_label.Name = "core_clock_label";
             this.core_clock_label.Size = new System.Drawing.Size(89, 28);
             this.core_clock_label.TabIndex = 35;
             this.core_clock_label.Text = "GPU Core";
+            this.core_clock_label.Click += new System.EventHandler(this.core_clock_label_Click);
             // 
             // gpu_power_label
             // 
             this.gpu_power_label.AutoSize = true;
             this.gpu_power_label.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpu_power_label.Location = new System.Drawing.Point(191, 469);
+            this.gpu_power_label.Location = new System.Drawing.Point(203, 434);
             this.gpu_power_label.Name = "gpu_power_label";
             this.gpu_power_label.Size = new System.Drawing.Size(92, 28);
             this.gpu_power_label.TabIndex = 38;
@@ -415,7 +424,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(203, 437);
+            this.label8.Location = new System.Drawing.Point(202, 411);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(94, 23);
             this.label8.TabIndex = 36;
@@ -424,7 +433,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::CaseHardwareMonitor.Properties.Resources.power_icon;
-            this.pictureBox10.Location = new System.Drawing.Point(173, 436);
+            this.pictureBox10.Location = new System.Drawing.Point(172, 410);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(33, 29);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -434,7 +443,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::CaseHardwareMonitor.Properties.Resources.speed_icon;
-            this.pictureBox9.Location = new System.Drawing.Point(173, 364);
+            this.pictureBox9.Location = new System.Drawing.Point(167, 360);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(33, 29);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -474,9 +483,9 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::CaseHardwareMonitor.Properties.Resources.temp_icon;
-            this.pictureBox5.Location = new System.Drawing.Point(288, 319);
+            this.pictureBox5.Location = new System.Drawing.Point(267, 319);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(19, 38);
+            this.pictureBox5.Size = new System.Drawing.Size(40, 38);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 19;
             this.pictureBox5.TabStop = false;
@@ -484,9 +493,9 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::CaseHardwareMonitor.Properties.Resources.gpu_icon;
-            this.pictureBox4.Location = new System.Drawing.Point(3, 258);
+            this.pictureBox4.Location = new System.Drawing.Point(0, 267);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(73, 67);
+            this.pictureBox4.Size = new System.Drawing.Size(89, 58);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 16;
             this.pictureBox4.TabStop = false;
@@ -504,9 +513,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::CaseHardwareMonitor.Properties.Resources.temp_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(288, 62);
+            this.pictureBox2.Location = new System.Drawing.Point(267, 62);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(19, 38);
+            this.pictureBox2.Size = new System.Drawing.Size(40, 38);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
@@ -525,7 +534,7 @@
             // 
             this.cpu_power_label.AutoSize = true;
             this.cpu_power_label.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cpu_power_label.Location = new System.Drawing.Point(190, 216);
+            this.cpu_power_label.Location = new System.Drawing.Point(207, 216);
             this.cpu_power_label.Name = "cpu_power_label";
             this.cpu_power_label.Size = new System.Drawing.Size(91, 28);
             this.cpu_power_label.TabIndex = 44;
@@ -581,12 +590,67 @@
             this.label11.TabIndex = 39;
             this.label11.Text = "CPU Core";
             // 
-            // Form1
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(211, 462);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(55, 23);
+            this.label7.TabIndex = 45;
+            this.label7.Text = "Fans";
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::CaseHardwareMonitor.Properties.Resources.fan_icon;
+            this.pictureBox13.Location = new System.Drawing.Point(172, 456);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(33, 29);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox13.TabIndex = 46;
+            this.pictureBox13.TabStop = false;
+            // 
+            // gpu_fans_label
+            // 
+            this.gpu_fans_label.AutoSize = true;
+            this.gpu_fans_label.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpu_fans_label.Location = new System.Drawing.Point(207, 485);
+            this.gpu_fans_label.Name = "gpu_fans_label";
+            this.gpu_fans_label.Size = new System.Drawing.Size(87, 28);
+            this.gpu_fans_label.TabIndex = 47;
+            this.gpu_fans_label.Text = "GPU FAN";
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::CaseHardwareMonitor.Properties.Resources.night_icon;
+            this.pictureBox14.Location = new System.Drawing.Point(9, 726);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(33, 33);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.TabIndex = 49;
+            this.pictureBox14.TabStop = false;
+            // 
+            // night_mode_toggle
+            // 
+            this.night_mode_toggle.Location = new System.Drawing.Point(47, 731);
+            this.night_mode_toggle.Name = "night_mode_toggle";
+            this.night_mode_toggle.Padding = new System.Windows.Forms.Padding(6);
+            this.night_mode_toggle.Size = new System.Drawing.Size(50, 19);
+            this.night_mode_toggle.TabIndex = 50;
+            this.night_mode_toggle.Load += new System.EventHandler(this.toggle1_Load);
+            this.night_mode_toggle.Click += new System.EventHandler(this.night_mode_toggle_Click);
+            // 
+            // main_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(484, 761);
+            this.Controls.Add(this.night_mode_toggle);
+            this.Controls.Add(this.pictureBox14);
+            this.Controls.Add(this.gpu_fans_label);
+            this.Controls.Add(this.pictureBox13);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.cpu_power_label);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.label9);
@@ -621,7 +685,7 @@
             this.Controls.Add(this.cpu_usage_progress);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.CPU_NAME);
-            this.Name = "Form1";
+            this.Name = "main_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Case Hardware Monitor";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -639,6 +703,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -684,6 +750,11 @@
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label ram_type_label;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.Label gpu_fans_label;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private Toggle night_mode_toggle;
     }
 }
 
