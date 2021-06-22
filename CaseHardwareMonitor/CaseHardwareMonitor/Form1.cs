@@ -116,7 +116,7 @@ namespace CaseHardwareMonitor
                     ram_usage_progress.ProgressColor = Color.Crimson;
                 }
 
-                core_clock_label.Text = sensors[5].ToString()+" MHz";
+                core_clock_label.Text = ((int)sensors[5]).ToString()+" MHz";
                 gpu_power_label.Text = sensors[7].ToString() + " W";
 
                 cpu_core_clock_label.Text = string.Format("{0:F1}", sensors[3]) + " MHz";
